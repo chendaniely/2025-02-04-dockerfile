@@ -1,0 +1,9 @@
+services:
+  analysis-env:
+    image: chendaniely/mycontainer
+    ports:
+      - "8787:8787"
+    volumes:
+      - .:/home/rstudio/work
+    environment:
+      PASSWORD: "password"
