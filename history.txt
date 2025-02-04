@@ -1,0 +1,39 @@
+
+  500  cd git/
+  501  git clone git@github.com:chendaniely/2025-02-04-dockerfile.git
+  502  cd 2025-02-04-dockerfile/
+  503  positron .
+  504  docker run --rm -it -e PASSWORD="password" -p 8787:8787 rocker/tidyverse:4.4.2
+  505  docker run --rm -it -e PASSWORD="password" -p 8787:8787 rocker/tidyverse:4.4.2
+  506*
+  507  docker run --rm -it -e PASSWORD="password" -p 8787:8787 -v /$(pwd):/home/rstudio/work  rocker/tidyverse:4.4.2
+  508  ls
+  509  cat container.R
+  510  cat README.md
+  511  docker-compose up
+  512  docker-compose up
+  513  docker-compose rm
+  514  docker build --tag mycontainer .
+  515  docker images
+  516  docker run --rm -it -e PASSWORD="password" -p 8787:8787 -v /$(pwd):/home/rstudio/work  mycontainer
+  517  docker run --rm -it -e PASSWORD="password" -p 8787:8787 -v /$(pwd):/home/rstudio/work  mycontainer
+  518  docker run --rm -it -e PASSWORD="password" -p 8787:8787 -v /$(pwd):/home/rstudio/work  mycontainer
+  519  docker build --tag mycontainer .
+  520  docker run --rm -it -e PASSWORD="password" -p 8787:8787 -v /$(pwd):/home/rstudio/work  mycontainer
+  521  docker-compose up
+  522  docker-compose rm
+  523  docker images | head 5
+  524  docker images | xarg | head
+  525  docker images | head
+  526  docker build --tag mycontainer .
+  527  docker build --tag chendaniely/mycontainer .
+  528  docker images | head
+  529  docker login -u chendaniely
+  530  docker push chendaniely/mycontainer
+  531  docerk run chendaniely/mycontainer
+  532  docker run chendaniely/mycontainer
+  533  git status
+  534  git add .
+  535  git commit -m "all class files, including gh actions"
+  536  git status
+  537  history > history.txt
