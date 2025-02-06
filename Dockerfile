@@ -1,6 +1,4 @@
-FROM rocker/tidyverse:4.4.2
-# mac ARM machines may need this:
-#FROM --platform=linux/arm64 rocker/tidyverse:4.4.2
+FROM rocker/rstudio:4.4.2 # for macs do not use the rocker/tidyverse image
 
 RUN echo "Hello"
 RUN pwd
