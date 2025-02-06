@@ -5,5 +5,5 @@ The command I ran was:
 
 
 ```bash
-docker run --rm -it -e PASSWORD="password" -p 8787:8787 -v /$(pwd):/home/rstudio/work  rocker/tidyverse:4.4.2
+docker run --rm -it -e PASSWORD="password" -p 8787:8787 -v /$(pwd):/home/rstudio/work  rocker/rstudio:4.4.2
 ```
